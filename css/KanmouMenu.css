@@ -1,0 +1,311 @@
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;margin: 0}
+html,body{}
+.KanmouMenu,.KanmouMenu * {
+	font-family: 'Open Sans',sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: 0
+}
+
+.KanmouMenu {
+	min-width: 260px;
+	float: left;
+	position: relative;
+}
+.menu-search{
+	background-color:rgba(249, 244, 244, 0);
+	border-radius:5px;
+	width:90%;
+	height:30px;
+	line-height: 28px;
+	border:thin solid #FFF;
+	text-indent:0.8em;
+	padding-top: 0.1em;
+	font-weight:bold;
+	color:#FFF;
+}
+#nav-list a{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+}
+.KanmouMenu .KanmouMenu-footer,.KanmouMenu .KanmouMenu-header {
+	width: 100%;
+	height: 50px;
+	padding-left: 22px;
+	float: left;
+	line-height: 50px;
+	font-weight: 600;
+	color: #f0f0f0;
+	background: #414956
+}
+
+.KanmouMenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.KanmouMenu ul li {
+	width: 100%;
+	display: block;
+	float: left;
+	position: relative
+}
+
+.KanmouMenu ul li a {
+	width: 100%;
+	padding: 14px 22px;
+	float: left;
+	text-decoration: none;
+	color: #f0f0f0;
+	font-size: 13px;
+	background: #414956;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	-o-transition: color .2s linear,background .2s linear;
+	-moz-transition: color .2s linear,background .2s linear;
+	-webkit-transition: color .2s linear,background .2s linear;
+	transition: color .2s linear,background .2s linear
+}
+
+.KanmouMenu>ul>li.active>a,.KanmouMenu>ul>li:hover>a {
+	color: #fff;
+	background: #3b424d
+}
+
+.KanmouMenu>ul>li>a {
+	border-bottom: solid 1px #3b424d
+}
+
+.KanmouMenu ul li a i {
+	width: 34px;
+	float: left;
+	line-height: 18px;
+	font-size: 16px;
+	text-align: left
+}
+
+.KanmouMenu .submenu-sign {
+	float: right;
+	right: 22px;
+	position: absolute;
+	line-height: 19px;
+	font-size: 20px;
+	-o-transition: transform .3s linear;
+	-moz-transition: transform .3s linear;
+	-webkit-transition: transform .3s linear;
+	-ms-transition: transform .3s linear
+}
+
+.KanmouMenu ul ul.submenu .submenu-sign {
+	line-height: 16px
+}
+
+.KanmouMenu .submenu-signs>.submenu-sign {
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.KanmouMenu ul ul.submenu,.KanmouMenu ul ul.submenu li ul.submenu {
+	width: 100%;
+	display: none;
+	position: static
+}
+
+.KanmouMenu ul ul.submenu li {
+	clear: both;
+	width: 100%
+}
+
+.KanmouMenu ul ul.submenu li a {
+	width: 100%;
+	float: left;
+	font-size: 11px;
+	background: #383838;
+	border-top: none;
+	position: relative;
+	border-left: solid 6px transparent;
+	-o-transition: border .2s linear;
+	-moz-transition: border .2s linear;
+	-webkit-transition: border .2s linear;
+	transition: border .2s linear
+}
+
+.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #414956
+}
+
+.KanmouMenu ul ul.submenu>li>a {
+	padding-left: 30px
+}
+
+.KanmouMenu ul ul.submenu>li>ul.submenu>li>a {
+	padding-left: 45px
+}
+
+.KanmouMenu ul ul.submenu>li>ul.submenu>li>ul.submenu>li>a {
+	padding-left: 60px
+}
+
+.KanmouMenu ul li .KanmouMenu-label,.KanmouMenu ul ul.submenu li .KanmouMenu-label {
+	min-width: 20px;
+	padding: 1px 2px 1px 1px;
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	font-size: 11px;
+	font-weight: 800;
+	color: #555;
+	text-align: center;
+	line-height: 18px;
+	background: #f0f0f0;
+	border-radius: 100%
+}
+
+.KanmouMenu ul ul.submenu li .KanmouMenu-label {
+	top: 12px
+}
+
+.ink {
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.3);
+	border-radius: 100%;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0)
+}
+
+.animate-ink {
+	-webkit-animation: ripple .5s linear;
+	-moz-animation: ripple .5s linear;
+	-ms-animation: ripple .5s linear;
+	-o-animation: ripple .5s linear;
+	animation: ripple .5s linear
+}
+
+@-webkit-keyframes ripple {
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(2.5)
+	}
+}
+
+@-moz-keyframes ripple {
+	100% {
+		opacity: 0;
+		-moz-transform: scale(2.5)
+	}
+}
+
+@-o-keyframes ripple {
+	100% {
+		opacity: 0;
+		-o-transform: scale(2.5)
+	}
+}
+
+@keyframes ripple {
+	100% {
+		opacity: 0;
+		transform: scale(2.5)
+	}
+}
+
+.blue.KanmouMenu .KanmouMenu-footer,.blue.KanmouMenu .KanmouMenu-header,.blue.KanmouMenu ul li a {
+	background: #4A89DC
+}
+
+.blue.KanmouMenu>ul>li.active>a,.blue.KanmouMenu>ul>li:hover>a {
+	background: #3e82da
+}
+
+.blue.KanmouMenu>ul>li>a {
+	border-bottom-color: #3e82da
+}
+
+.blue.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #3e82da
+}
+
+.green.KanmouMenu .KanmouMenu-footer,.green.KanmouMenu .KanmouMenu-header,.green.KanmouMenu ul li a {
+	background: #03A678
+}
+
+.green.KanmouMenu>ul>li.active>a,.green.KanmouMenu>ul>li:hover>a {
+	background: #049372
+}
+
+.green.KanmouMenu>ul>li>a {
+	border-bottom-color: #049372
+}
+
+.green.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #049372
+}
+
+.red.KanmouMenu .KanmouMenu-footer,.red.KanmouMenu .KanmouMenu-header,.red.KanmouMenu ul li a {
+	background: #ED5565
+}
+
+.red.KanmouMenu>ul>li.active>a,.red.KanmouMenu>ul>li:hover>a {
+	background: #DA4453
+}
+
+.red.KanmouMenu>ul>li>a {
+	border-bottom-color: #DA4453
+}
+
+.red.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #DA4453
+}
+
+.white.KanmouMenu .KanmouMenu-footer,.white.KanmouMenu .KanmouMenu-header,.white.KanmouMenu ul li a {
+	background: #fff;
+	color: #555
+}
+
+.white.KanmouMenu>ul>li.active>a,.white.KanmouMenu>ul>li:hover>a {
+	background: #f0f0f0
+}
+
+.white.KanmouMenu>ul>li>a {
+	border-bottom-color: #f0f0f0
+}
+
+.white.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #f0f0f0
+}
+
+.white.KanmouMenu ul ul.submenu li a {
+	color: #f0f0f0
+}
+
+.white.KanmouMenu>ul>li>a>.ink {
+	background: rgba(0,0,0,.1)
+}
+
+.black.KanmouMenu .KanmouMenu-footer,.black.KanmouMenu .KanmouMenu-header,.black.KanmouMenu ul li a {
+	background: #292929
+}
+
+.black.KanmouMenu>ul>li.active>a,.black.KanmouMenu>ul>li:hover>a {
+	background: #222
+}
+
+.black.KanmouMenu>ul>li>a {
+	border-bottom-color: #222
+}
+
+.black.KanmouMenu ul ul.submenu li:hover>a {
+	border-left-color: #222
+}
