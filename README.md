@@ -1,7 +1,7 @@
 # KanmouMenu
 
 #### 介绍
-KanmouMenu（看某菜单），基于jquery、Font Awesome开发的前段垂直导航菜单，代码少，功能强大，导航可伸缩、查找。
+KanmouMenu（看某菜单），基于jquery、Font Awesome开发的前段垂直导航菜单，代码少，功能强大，导航可伸缩、查找。如果你举得KanmouMenu对你有帮助，请给我一个"Star"作为鼓励。
 
 #### 目录结构
 软件还处于开发调试中，随时可能调整目录结构，目录结构确定后更新。
