@@ -23,6 +23,10 @@ KanmouMenu（看某菜单），基于jquery、Font Awesome开发的前段垂直�
 1.  看某GitEe： [https://gitee.com/kanmou](https://gitee.com/kanmou)
 2.  看某GitHub: [https://github.com/kanmou](https://github.com/kanmou)
 
+#### 看某抖音
+
+抖音号：KanMou
+
 #### 参考文献
 
 1.  暂时未整理好。
